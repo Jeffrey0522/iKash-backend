@@ -1,29 +1,34 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# iKash Backend
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Overview
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+iKash is a peer-to-peer (P2P) crypto on/off-ramp platform built on the [Stellar](https://stellar.org/) blockchain. It enables users to exchange cryptocurrency assets for fiat currency directly with one another, eliminating the need for a centralized custodian.
 
-## Description
+## Key Features
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- **Non-custodial architecture** - iKash never holds, controls, or has access to user private keys or funds at any point during a transaction
+- **Trustless escrow** - Fund security is guaranteed by smart contract-based escrows deployed on the Stellar network, managed through [Trustless Work](https://trustlesswork.com/), an audited and production-grade escrow infrastructure approved within the Stellar ecosystem
+- **KYC integration** - Identity verification is handled through [Didit](https://didit.me/)
+- **P2P trading** - Direct trades between users from their own Stellar-compatible self-custodial wallets
+
+## Target Users
+
+iKash is built for crypto and Stellar users who need a simpler way to convert digital assets (especially USDC) into local fiat currency without transferring funds to a centralized exchange.
+
+- **Primary markets**: Latin America and other emerging markets where direct on/off-ramp options are limited and local commerce is not yet broadly prepared to accept crypto as a day-to-day payment method
+- **User profile**: Users with prior experience using P2P exchanges or self-custodial wallets. The product does not yet include an in-app tutorial, so some familiarity with these tools is recommended
+
+## Problem & Solution
+
+### The Problem
+
+In many target markets, local commerce is not yet ready to accept crypto for everyday transactions. As a result, users holding USDC or other digital assets still need practical ways to convert them to local currency, often through exchanges or P2P alternatives. This process typically involves extra steps, higher fees, longer delays, and custodial risks.
+
+### Our Approach
+
+iKash addresses this by enabling direct trades from users' own Stellar-compatible wallets while maintaining full control of their private keys. The P2P flow is secured through Trustless Work's escrow infrastructure on Stellar, with KYC handled by Didit.
+
+Our core hypothesis is that a non-custodial, trust-minimized approach can offer enough usability, trust, and value for users to choose iKash over their existing off-ramp methods. This remains to be validated with real users.
 
 ## Project setup
 
